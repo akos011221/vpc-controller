@@ -2,7 +2,7 @@
 # This file is used to track the info used to scaffold your project
 # and allow the plugins properly work.
 # More info: https://book.kubebuilder.io/reference/project-config.html
-domain: github.com
+domain: vpccontroller.gcp
 layout:
 - go.kubebuilder.io/v4
 projectName: vpc-controller
@@ -12,7 +12,7 @@ resources:
     crdVersion: v1
     namespaced: true
   controller: true
-  domain: github.com
+  domain: vpccontroller.gcp
   group: networking
   kind: VPCController
   path: github.com/akos011221/vpc-controller/api/v1

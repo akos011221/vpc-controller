@@ -17,6 +17,7 @@ limitations under the License.
 package v1
 
 import (
+	"github.com/akos011221/vpc-controller/internal/models"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
@@ -28,8 +29,9 @@ type VPCControllerSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of VPCController. Edit vpccontroller_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	ControlledProjects []string                  `json:"controlled_projects"`
+	PolicyBasedRoutes  []models.PolicyBasedRoute `json:"policy_based_routes"`
+	SubnetMaxSize      int32                     `json:"subnet_max_size"`
 }
 
 // VPCControllerStatus defines the observed state of VPCController.

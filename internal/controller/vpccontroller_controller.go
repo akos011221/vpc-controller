@@ -33,9 +33,9 @@ type VPCControllerReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-// +kubebuilder:rbac:groups=networking.github.com,resources=vpccontrollers,verbs=get;list;watch;create;update;patch;delete
-// +kubebuilder:rbac:groups=networking.github.com,resources=vpccontrollers/status,verbs=get;update;patch
-// +kubebuilder:rbac:groups=networking.github.com,resources=vpccontrollers/finalizers,verbs=update
+// +kubebuilder:rbac:groups=networking.vpccontroller.gcp,resources=vpccontrollers,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=networking.vpccontroller.gcp,resources=vpccontrollers/status,verbs=get;update;patch
+// +kubebuilder:rbac:groups=networking.vpccontroller.gcp,resources=vpccontrollers/finalizers,verbs=update
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.

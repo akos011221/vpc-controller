@@ -1,4 +1,4 @@
-apiVersion: networking.github.com/v1
+apiVersion: networking.vpccontroller.gcp/v1
 kind: VPCController
 metadata:
   labels:
