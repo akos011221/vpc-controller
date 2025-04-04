@@ -1,5 +1,5 @@
 # vpc-controller
-// TODO(user): Add simple overview of use/purpose
+VPCController is a Kubernetes API that helps GCP Platform and Network Engineers delegate workload-level network management to application teams—avoiding the complexity of managing separate network projects (with Shared VPCs) and reducing infrastructure and GitOps overhead. VPCController allows you to define and enforce smart networking rules centrally, guaranteeing that all VPCs follow secure routing configurations and other best practices.
 
 ## Description
 // TODO(user): An in-depth paragraph about your project and overview of use
