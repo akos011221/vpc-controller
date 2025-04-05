@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- vpc_v1alpha1_vpccontroller.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples

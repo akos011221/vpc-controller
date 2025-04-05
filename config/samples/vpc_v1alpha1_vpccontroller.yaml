@@ -1,0 +1,10 @@
+apiVersion: vpc.akosrbn.io/v1alpha1
+kind: VPCController
+metadata:
+  labels:
+    app.kubernetes.io/name: vpc-controller
+    app.kubernetes.io/managed-by: kustomize
+  name: vpccontroller-sample
+spec:
+  # TODO(user): Add fields here
+  size: 1
